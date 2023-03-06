@@ -1,8 +1,4 @@
+<!-- <%- means that an ejs file is getting passed in, but <%= is for passing in context, and an object will have to be read -->
 <%- include('./partials/headAndNav.ejs') %>
     <h1>My Homepage</h1>
-    <footer>
-        <h3>Please support artists are holding slugs!</h3>
-    </footer>
-    </body>
-
-    </html>
+    <%- include('/partials/footer.ejs') %>
