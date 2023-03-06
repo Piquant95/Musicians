@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
     <% if(typeof otherStyleSheet !=='undefined' ) { %>
-        <link rel="stylesheet" href=<%=otherStyleSheet%>>
-        <% } %>
-            <% if(!pageName) { %>
-                <title>Musicians Holding Slugs</title>
-                <% } else { %>
-                    <title>Musicians Holding Slugs | <%= pageName %>
-                    </title>
-                    <% } %>
+        <link rel="stylesheet" href=<%=otherStyleSheet %>>
+        <% } else { %>
+            <link rel="stylesheet" href="/styles/main.css">
+            <% } %>
+                <% if(!pageName) { %>
+                    <title>Musicians Holding Slugs</title>
+                    <% } else { %>
+                        <title>Musicians Holding Slugs | <%= pageName %>
+                        </title>
+                        <% } %>
 </head>
 
 <body>
