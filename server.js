@@ -8,7 +8,10 @@ const musiciansController = require('./controllers/musicians.js');
 // The directory has to be named views.
 app.set('view engine', 'ejs');
 
-// I want to make sure that I can have a generic home route first but i also want my musicians contorller to be read
+// I also want to make sure that I connect this (server) to the css files and any DOM manipulation in the 'public' directory / lets you serve images, css, and javascript
+app.use(express.static('public'));
+
+// I want to make sure that I can have a generic home route first but i also want my musicians controller to be read
 // before any * or catch all
 
 
