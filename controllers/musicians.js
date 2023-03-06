@@ -4,6 +4,8 @@ const express = require('express');
 // of the routes in the entire file easily.
 const router = express.Router();
 
+// whenever i want to use a real route, use res.render / res.send is the console.log of express
+// make sure you're hitting the right route
 router.get('', (req, res) => {
     res.render('musicians/index.ejs')
 })
