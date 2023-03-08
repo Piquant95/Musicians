@@ -27,4 +27,4 @@ const musiciansSchema = new mongoose.Schema(
 // that is named from the first argument, Musicians here. And it applies the schema above to that collection.
 const Musicians = mongoose.model('Musicians', musiciansSchema)
 
-module.export = Musicians;
+module.exports = Musicians;
